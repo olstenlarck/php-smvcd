@@ -1,0 +1,21 @@
+﻿.pagination {
+    text-align: center;
+    font-family: Arial;
+	margin-bottom: 5px;
+}
+
+.pagination a.active, .pagination .inactive, .pagination .current {
+    padding: 2px 7px;
+    margin: 0 2px;
+	
+    border-radius: 4px;
+}
+
+.pagination a.active:hover, .pagination .current {
+    background: #565656;
+    color: #fff;
+}
+
+.pagination .inactive {
+    color: #808080;
+}

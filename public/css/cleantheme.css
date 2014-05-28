@@ -1,0 +1,339 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body  {
+    font-family: "Segoe UI", Verdana, Tahoma, Sans, Arial,Helvetica, sans-serif;
+    font-size:80%;
+    background:	#e9e9e9;
+    width: 100%;
+    height: 100%;
+    padding-top: 6%;
+    color: #111; /* Black */
+}
+
+html {
+    overflow-y:scroll;
+}
+img {
+    vertical-align:middle;
+    border:0;
+}
+a {
+    text-decoration:none;
+    color:#2946AD;
+}
+a:hover {
+    text-decoration:underline;
+    color:#6B76B1;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+table {
+    width:99%; /* wegen IE 6 */
+    border-collapse:collapse;
+    border:0;
+    border-spacing:0;
+    margin:5px 0;
+}
+thead {
+    background-color:#eef3f7;
+}
+td {
+    vertical-align:top;
+}
+form {
+    padding:0;
+    margin:0;
+}
+tr.row-1 {
+    background:transparent;
+}
+tr.row-2 {
+    background:#f5f5f5;
+}
+code {
+    margin: 5px 0;
+    padding: 10px;
+    text-align: left;
+    display: block;
+    overflow: auto;  
+    font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace ;
+    /* white-space: pre; */
+    background: #FAFAFA;
+    border: 1px solid #f2f2f2;  
+}
+/*===========CLASSES================*/
+.left { float: left; }
+.right { float: right; }
+/*FIX FOR CSS FLOATS*/
+.clearfix {
+    clear:both;
+}
+/*==========//END CLASSES==========*/
+
+
+#wrap_main {
+    width: 870px;
+    background: transparent;
+    margin: 0 auto;
+}
+#wrap_header {
+
+}
+#wrap_header .cf_top {background:url(../imgs/cf_top.png) no-repeat top; height:20px;}
+#wrap_header .cf_middle {background:url(../imgs/cf_middle.png) repeat-y;}
+#wrap_header .cf_middle a, #wrap_header .cf_middle a:hover {color: #5da5e1; padding: 0 0 15px 0; text-decoration: none;}
+#wrap_header .cf_middle h1 {
+    font-size: 2.1em;
+    padding: 0 20px;
+}
+#wrap_header .cf_bottom {
+    margin: 0 2px;
+    width: 860px;
+    border-left: 4px solid #b8b8b8;
+    border-right: 3px solid #b8b8b8;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3BB9FF), to(#BC3600)); /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-linear-gradient(top, #3BB9FF, #1569C7);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -moz-linear-gradient(top,  #F87217,  #BC3600); /* Firefox 3.6+ */
+    background-image: -ms-linear-gradient(top, #F87217, #BC3600); /* IE 10+ */
+    background-image: -o-linear-gradient(top, #F87217, #BC3600); /* Opera 11.10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F87217', endColorstr='#BC3600'); /* IE 7 & 8 */
+}
+#wrap_header .cf_bottom p {
+    padding: 4px 10px 6px 10px;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+#wrap_content {background:url(../imgs/cf_middle.png) repeat-y; padding: 12px 15px 13px 9px;}
+#wrap_menu {
+    width: 170px;
+    margin-right: 8px;
+}
+#wrap_right {
+    width: 666px;
+}
+#wrap_right p {
+    padding: 5px 10px;
+}
+#wrap_right h2 {
+    font: Bold 140% 'Trebuchet MS', Tahoma, Sans-serif;
+    color: #88ac0b; 
+    padding: 5px 0 5px 25px; 	
+    border-bottom: 1px solid #EFF0F1;
+    background: #FFF url(../imgs/square-green.png) no-repeat 3px 50%;	
+    text-transform: none;
+}
+
+.post-footer {
+    background-color: #FAFAFA;
+    padding: 5px; margin: 20px 10px 10px 10px;
+    border: 1px solid #f2f2f2;
+    font-size: 95%;	
+}
+.post-footer .date {
+    background: url(../imgs/clock.gif) no-repeat left center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .comments {
+    background: url(../imgs/comment.gif) no-repeat left center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .readmore {
+    background: url(../imgs/page.gif) no-repeat left center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+#wrap_footer {background:url(../imgs/cf_bottom.png) no-repeat top; height:30px;}
+
+#wrap_footer p {
+    padding: 6px 15px;
+}
+
+
+/* Menu Specific */
+
+/* If you change menu li height, you also have to adjust padding and heights in */
+/* li a, li span and img.icon and img.dropdown */
+
+#menu { padding: 0 5px}
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+#menu li {
+    /*	border-bottom:1px dotted #6F788E;*/
+    padding:0;
+    white-space:nowrap;
+    overflow:hidden;
+    line-height:20px;
+    vertical-align:middle;
+    display:block;
+}
+
+#menu li li a {
+    padding-left:20px;
+}
+#menu li li li a {
+    padding-left:40px;
+}
+
+#menu li.active > a {
+    font-weight:normal;
+    background:#EAEBF1;
+}
+#menu li.first {
+    margin-top:0px !important;
+}
+#menu li.root {
+    margin-top:12px;
+    font-weight:bold;
+}
+#menu a:hover {
+    background-color:#5da5e1 !important;
+    color:white;
+}
+#menu li a {
+    text-decoration:none;
+    display:block;
+    border-bottom:1px dotted #6F788E;
+}
+#menu li > span {
+    border-bottom:1px dotted #6F788E;
+    display:block;
+}
+#menu img.dropdown {
+    margin-right:4px;
+}
+
+#menu li.disabled:hover {
+    background:none;
+}
+
+/* main menus */
+#menu a.client,
+#menu a.ftplib,
+#menu a.support,
+#menu a.customer,
+#menu a.search,
+#menu span.corporate1
+{
+    font-weight:bold !important;
+}
+
+#menu a.ftplib,
+#menu a.support,
+#menu a.customer,
+#menu a.search,
+#menu span.corporate1
+{
+    margin-top:12px;
+}
+
+.sprite-book,
+.sprite-cart,
+.sprite-changelog,
+.sprite-chm,
+.sprite-client,
+.sprite-cog,
+.sprite-corporate,
+.sprite-download,
+.sprite-editions,
+.sprite-email,
+.sprite-forum,
+.sprite-help,
+.sprite-information,
+.sprite-kb,
+.sprite-languages,
+.sprite-license,
+.sprite-renew,
+.sprite-screenshots,
+.sprite-search,
+.sprite-sftp,
+.sprite-sitemap,
+.sprite-tutorials,
+#menu span.client,
+#menu span.client-download,
+#menu span.client-features,
+#menu span.client-editions,
+#menu span.client-screenshots,
+#menu span.client-purchase,
+#menu span.client-purchase-buy,
+#menu span.ftplib,
+#menu span.ftplib-download,
+#menu span.ftplib-samples,
+#menu span.ftplib-documentation,
+#menu span.ftplib-purchase,
+#menu span.support,
+#menu span.support-tutorials,
+#menu span.support-kb,
+#menu span.support-forums,
+#menu span.customer,
+#menu span.corporate,
+#menu span.corporate-about,
+#menu span.corporate-contact,
+#menu span.search,
+.sprites
+{
+    z-index:10;
+    background:url(../imgs/menu.png) no-repeat top left;
+    padding:0px 0px 0px 20px;
+}
+
+#menu span.ftplib,
+.sprite-book{ background-position: 0 0; width: 16px; height: 16px; }
+#menu span.client-purchase-buy,
+.sprite-cart{ background-position: 0 -66px; width: 16px; height: 16px; }
+.sprite-changelog{ background-position: 0 -132px; width: 16px; height: 16px; }
+#menu span.ftplib-documentation,
+.sprite-chm{ background-position: 0 -198px; width: 15px; height: 16px; }
+#menu span.customer,
+.sprite-client{ background-position: 0 -264px; width: 16px; height: 16px; }
+#menu span.client-features,
+#menu span.ftplib-samples,
+.sprite-cog{ background-position: 0 -330px; width: 16px; height: 16px; }
+#menu span.corporate,
+.sprite-corporate{ background-position: 0 -396px; width: 16px; height: 16px; }
+#menu span.client-download,
+#menu span.ftplib-download,
+.sprite-download{ background-position: 0 -462px; width: 16px; height: 16px; }
+#menu span.client-editions,
+.sprite-editions{ background-position: 0 -528px; width: 16px; height: 16px; }
+#menu span.corporate-contact,
+.sprite-email{ background-position: 0 -594px; width: 16px; height: 16px; }
+#menu span.support-forums,
+.sprite-forum{ background-position: 0 -660px; width: 16px; height: 16px; }
+#menu span.support,
+.sprite-help{ background-position: 0 -726px; width: 16px; height: 16px; }
+#menu span.corporate-about,
+.sprite-information{ background-position: 0 -792px; width: 16px; height: 16px; }
+#menu span.support-kb,
+.sprite-kb{ background-position: 0 -858px; width: 16px; height: 16px; }
+.sprite-languages{ background-position: 0 -924px; width: 16px; height: 16px; }
+#menu span.client-purchase,
+#menu span.ftplib-purchase,
+.sprite-license{ background-position: 0 -990px; width: 16px; height: 16px; }
+.sprite-renew{ background-position: 0 -1056px; width: 16px; height: 16px; }
+#menu span.client-screenshots,
+.sprite-screenshots{ background-position: 0 -1122px; width: 16px; height: 16px; }
+#menu span.search,
+.sprite-search{ background-position: 0 -1188px; width: 16px; height: 16px; }
+#menu span.client,
+.sprite-sftp{ background-position: 0 -1254px; width: 16px; height: 16px; }
+.sprite-sitemap{ background-position: 0 -1320px; width: 16px; height: 16px; }
+#menu span.support-tutorials,
+.sprite-tutorials{ background-position: 0 -1386px; width: 16px; height: 14px; }
+
+.sprite-rss { background: url(rss16.png) no-repeat; padding-left: 20px; }
+.sprite-twitter { background: url(twitter.png) no-repeat; padding-left: 20px; }
+.sprite-facebook { background: url(facebook.png) no-repeat; padding-left: 20px; }
+.sprite-winlogo { background:url(win_logo_color.png) 0 2px no-repeat transparent; padding-left: 20px; }
+.sprite-exclamation { background:url(exclamation.png) 0 2px no-repeat transparent; padding-left: 20px; }
+.sprite-key { background:url(key.png) 0 2px no-repeat transparent; padding-left: 20px; }
+
+
+
+
+
